@@ -14,4 +14,8 @@ class Game(object):
         
     def add_player(self, player):
         self.players.append(player)
+
+class Round(object):
     
+    def __init__(self, number):
+        self.number = number

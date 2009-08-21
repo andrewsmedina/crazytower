@@ -1,4 +1,4 @@
-from crazytower.models import Game, Player  
+from crazytower.models import Game, Player
 
 def test_can_create_game():
     new_game = Game()
