@@ -1,3 +1,22 @@
+class Tower(object):
+    
+    def __init__(self, x, y):
+        
+        if not x:
+            raise ValueError(u'Tower x can not be null')
+            
+        if not isinstance(x, int):
+            raise ValueError(u'Tower x will be a number')
+            
+        if not y:
+            raise ValueError(u'Tower y can not be null')
+
+        if not isinstance(y, int):
+            raise ValueError(u'Tower y will be a number')
+            
+        self.x = x
+        self.y = y
+
 class Player(object):
     
     def __init__(self, name):
