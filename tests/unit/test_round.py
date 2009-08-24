@@ -28,4 +28,12 @@ def test_created_round_raises_on_not_number():
         return 
     assert False
     
+def test_1000_health_point_when_start_a_round():
+    new_round = Round(number=1)
+    new_round.start()
+    assert new_round.health == 1000
 
+def test_200_gold_point_when_start_a_round():
+    new_round = Round(number=1)
+    new_round.start()
+    assert new_round.gold == 200

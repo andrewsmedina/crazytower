@@ -26,3 +26,7 @@ class Round(object):
             raise ValueError(u"Round number will be a number")
             
         self.number = number
+        
+    def start(self):
+        self.health = 1000
+        self.gold = 200

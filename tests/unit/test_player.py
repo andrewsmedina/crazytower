@@ -27,3 +27,4 @@ def test_create_player_raises_on_empty_name():
         assert str(error) == u"Player name can not be null or empty"
         return 
     assert False
+    
