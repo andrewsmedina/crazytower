@@ -18,4 +18,11 @@ class Game(object):
 class Round(object):
     
     def __init__(self, number):
+        
+        if not number:
+            raise ValueError(u"Round number can not be null")
+            
+        if not isinstance(number, int):
+            raise ValueError(u"Round number will be a number")
+            
         self.number = number

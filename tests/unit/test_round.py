@@ -12,3 +12,20 @@ def test_created_round_keeps_number():
     new_round = Round(number=1)
     assert new_round.number == 1
 
+def test_created_round_raises_on_null_number():
+    try:
+        new_round = Round(number=None)
+    except ValueError, error:
+        assert str(error) == u"Round number can not be null"
+        return 
+    assert False
+
+def test_created_round_raises_on_not_number():
+    try:
+        new_round = Round(number='foo')
+    except ValueError, error:
+        assert str(error) == u"Round number will be a number"
+        return 
+    assert False
+    
+
